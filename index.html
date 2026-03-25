@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atul | Full Stack Developer</title>
+  <meta name="description" content="Atul's portfolio with projects, certificates, skills, resume, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-gradient" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home">ATUL</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-active">Home</a></li>
+        <li><a href="#projects">Web Dev</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="https://github.com/Atulpandeytech" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="nav-icon" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="nav-social-svg">
+            <path fill="currentColor" d="M12 0.296c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385 0.6 0.113 0.82-0.258 0.82-0.577 0-0.285-0.01-1.04-0.015-2.04-3.338 0.724-4.042-1.61-4.042-1.61-0.546-1.387-1.333-1.757-1.333-1.757-1.09-0.745 0.083-0.729 0.083-0.729 1.205 0.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495 0.998 0.108-0.776 0.419-1.305 0.762-1.605-2.665-0.304-5.467-1.332-5.467-5.93 0-1.31 0.469-2.38 1.236-3.22-0.124-0.303-0.536-1.524 0.117-3.176 0 0 1.008-0.322 3.3 1.23a11.504 11.504 0 0 1 3.003-0.404c1.018 0.005 2.042 0.138 3.003 0.404 2.291-1.552 3.297-1.23 3.297-1.23 0.655 1.653 0.243 2.874 0.12 3.176 0.77 0.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.48 5.921 0.43 0.372 0.823 1.102 0.823 2.222 0 1.606-0.015 2.9-0.015 3.293 0 0.322 0.216 0.694 0.825 0.576 4.765-1.587 8.2-6.082 8.2-11.384 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/atulpandeyy09" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="nav-icon" title="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="nav-social-svg">
+            <path fill="currentColor" d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8zm5.2-2.15a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/atulpandey2005" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="nav-icon" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="nav-social-svg">
+            <path fill="currentColor" d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3A2.13 2.13 0 1 0 5.3 7.26 2.13 2.13 0 0 0 5.25 3zM20.44 12.95c0-3.42-1.82-5.01-4.25-5.01-1.96 0-2.84 1.08-3.33 1.84V8.5H9.5V20h3.36v-5.7c0-1.5.28-2.95 2.14-2.95 1.83 0 1.86 1.71 1.86 3.05V20h3.38v-7.05z"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-left">
+        <h1 class="hero-title">
+          <span class="hero-name">Atul Pandey</span><br />
+          <span class="hero-role">Full Stack Developer</span>
+        </h1>
+        
+        <div class="hero-badges">
+          <span class="badge">Web Development</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">React & Node.js</span>
+        </div>
+
+        <p class="hero-desc">I design and build practical products across web development. Focused on clean architecture and solving real user problems.</p>
+        
+        <p class="hero-bio">Developer focused on building fast, scalable, and user-friendly applications. Always exploring new technologies and pushing boundaries.</p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          <a class="btn btn-secondary" href="atulcv.pdf" download="Atul-Resume.pdf">⬇ Download CV</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/Atulpandeytech" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/atulpandey2005" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://www.instagram.com/atulpandeyy09" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+          <a href="mailto:atulpandit2047@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-container">
+          <div class="profile-ring ring-outer" aria-hidden="true"></div>
+          <div class="profile-ring ring-middle" aria-hidden="true"></div>
+          <img src="cvphoto.jpeg" alt="Atul Pandey" class="profile-image" />
+
+          <div class="floating-dot dot-1" aria-hidden="true"></div>
+          <div class="floating-dot dot-2" aria-hidden="true"></div>
+          <div class="floating-dot dot-3" aria-hidden="true"></div>
+
+          <div class="code-chip chip-1" aria-hidden="true">&lt;React /&gt;</div>
+          <div class="code-chip chip-2" aria-hidden="true">{ Node }</div>
+          <div class="code-chip chip-3" aria-hidden="true"># Python</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container reveal">
+      <p class="section-no">// 01. ABOUT</p>
+      <h2 class="section-title">About Me</h2>
+      
+      <div class="about-content">
+        <p class="about-intro">
+          I'm passionate about web development and solving complex problems through data structures and algorithms. I love crafting responsive, user-friendly interfaces while optimizing backend logic for performance.
+        </p>
+        
+        <div class="about-features">
+          <div class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Building scalable, responsive applications with modern frameworks and clean architecture.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🧩</div>
+            <h3>DSA & Problem Solving</h3>
+            <p>Cracking challenging algorithmic problems and optimizing solutions for performance.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Code Quality</h3>
+            <p>Writing clean, maintainable, and efficient code that's easy to scale and evolve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <section id="education" class="section container reveal">
+      <p class="section-no">// 02. ACADEMIC JOURNEY</p>
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">🎓</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Lovely Professional University</h3>
+              <span class="timeline-badge">7.48 CGPA</span>
+            </div>
+            <p class="timeline-subtitle">Bachelor of Technology in Computer Science</p>
+            <p class="timeline-location">Jalandhar, India</p>
+            <p class="timeline-date">2023 - 2027</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">📚</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">G.M.Academy </h3>
+              <span class="timeline-badge">83.2%</span>
+            </div>
+            <p class="timeline-subtitle">12th Grade</p>
+            <p class="timeline-location">Salempur, Deoria</p>
+            <p class="timeline-date">2021-2022</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">✏️</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">G.M.Academy </h3>
+              <span class="timeline-badge">89%</span>
+            </div>
+            <p class="timeline-subtitle">10th Grade</p>
+            <p class="timeline-location">Salempur, Deoria</p>
+            <p class="timeline-date">2019-2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section container reveal">
+      <p class="section-no">// 03. CREDENTIALS</p>
+      <h2 class="section-title">Certificates</h2>
+      <div class="certificate-grid">
+        <article class="cert-card cert-card-aws">
+          <div class="cert-header">
+            <span class="cert-icon">☁️</span>
+            <span class="cert-badge">AWS</span>
+          </div>
+          <h3>AWS AI Certificate</h3>
+          <p class="cert-description">Advanced knowledge in AI/ML services and cloud architecture on AWS.</p>
+          <div class="cert-meta">
+            <span class="cert-year">2026</span>
+            <span class="cert-issuer">Amazon Web Services</span>
+          </div>
+          <a class="cert-link" href="AWS -AI Certificate.pdf" aria-label="View Certificate">View Certificate →</a>
+        </article>
+        <article class="cert-card cert-card-devops">
+          <div class="cert-header">
+            <span class="cert-icon">⚙️</span>
+            <span class="cert-badge">DevOps</span>
+          </div>
+          <h3>AWS DevOps Certificate</h3>
+          <p class="cert-description">Expertise in continuous integration, deployment, and infrastructure automation.</p>
+          <div class="cert-meta">
+            <span class="cert-year">2026</span>
+            <span class="cert-issuer">Amazon Web Services</span>
+          </div>
+          <a class="cert-link" href="AWS devops.pdf" aria-label="View Certificate">View Certificate →</a>
+        </article>
+        <article class="cert-card cert-card-ai">
+          <div class="cert-header">
+            <span class="cert-icon">🤖</span>
+            <span class="cert-badge">AI</span>
+          </div>
+          <h3>AI Essentials for Beginners</h3>
+          <p class="cert-description">Fundamentals of artificial intelligence, machine learning, and practical applications.</p>
+          <div class="cert-meta">
+            <span class="cert-year">2026</span>
+            <span class="cert-issuer">Online Learning Platform</span>
+          </div>
+          <a class="cert-link" href="chatgpt1.pdf" aria-label="View Certificate">View Certificate →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section container reveal">
+      <p class="section-no">// 04. PROJECTS</p>
+      <h2 class="section-title">Featured Work</h2>
+      <div class="project-stack">
+        <article class="project-card project-card-1">
+          <div class="project-icon">🚚</div>
+          <div class="project-head">
+            <h3>Last Minute Route Allocation</h3>
+            <span class="project-type">Web</span>
+          </div>
+          <p>An intelligent system for optimizing and allocating delivery routes in real-time, enabling efficient last-minute route planning and tracking.</p>
+          <ul class="project-points">
+            <li>Real-time route optimization engine</li>
+            <li>REST API integration for seamless data flow</li>
+            <li>Dynamic route allocation with live tracking</li>
+          </ul>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>REST API</span>
+          </div>
+          <a class="project-link" href="https://github.com/Atulpandeytech/last_minute_route_tracking" target="_blank" rel="noopener noreferrer">🚀 Explore Project</a>
+        </article>
+
+        <article class="project-card project-card-2">
+          <div class="project-icon">🏢</div>
+          <div class="project-head">
+            <h3>Hostel Room Allocation System</h3>
+            <span class="project-type">Web</span>
+          </div>
+          <p>A comprehensive hostel management platform with seamless room booking, secure payment processing, and immersive live room viewing with photos and videos.</p>
+          <ul class="project-points">
+            <li>Hostel room booking and management</li>
+            <li>Secure payment integration and processing</li>
+            <li>Live room views with images and video gallery</li>
+          </ul>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Payment Security</span>
+          </div>
+          <a class="project-link" href="https://github.com/Atulpandeytech/hostel-room-allocation-system-" target="_blank" rel="noopener noreferrer">🚀 Explore Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container reveal">
+      <p class="section-no">// 05. SKILLS</p>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card skill-card-lang">
+          <div class="skill-header">
+            <span class="skill-icon">📚</span>
+            <h3 class="skill-title">Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-lang">C++</span>
+            <span class="skill-tag tag-lang">Python</span>
+            <span class="skill-tag tag-lang">JavaScript</span>
+            <span class="skill-tag tag-lang">Java</span>
+            <span class="skill-tag tag-lang">C</span>
+          </div>
+          <p class="skill-count">5 skills</p>
+        </div>
+
+        <div class="skill-card skill-card-web">
+          <div class="skill-header">
+            <span class="skill-icon">🌐</span>
+            <h3 class="skill-title">Web Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-web">React</span>
+            <span class="skill-tag tag-web">Next.js</span>
+            <span class="skill-tag tag-web">Django</span>
+            <span class="skill-tag tag-web">DRF</span>
+            <span class="skill-tag tag-web">Flask</span>
+            <span class="skill-tag tag-web">Tailwind CSS</span>
+            <span class="skill-tag tag-web">HTML & CSS</span>
+          </div>
+          <p class="skill-count">7 skills</p>
+        </div>
+
+        <div class="skill-card skill-card-tools">
+          <div class="skill-header">
+            <span class="skill-icon">🔧</span>
+            <h3 class="skill-title">Tools & IDEs</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-tools">Git & Github</span>
+            <span class="skill-tag tag-tools">VS Code</span>
+            <span class="skill-tag tag-tools">Android Studio</span>
+            <span class="skill-tag tag-tools">Jupyter Notebook</span>
+            <span class="skill-tag tag-tools">Postman</span>
+          </div>
+          <p class="skill-count">5 skills</p>
+        </div>
+
+        <div class="skill-card skill-card-soft">
+          <div class="skill-header">
+            <span class="skill-icon">💡</span>
+            <h3 class="skill-title">Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-soft">Leadership</span>
+            <span class="skill-tag tag-soft">Optimistic</span>
+            <span class="skill-tag tag-soft">Problem Solver</span>
+            <span class="skill-tag tag-soft">Adaptive</span>
+          </div>
+          <p class="skill-count">4 skills</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section container reveal">
+      <p class="section-no">// 06. ACHIEVEMENTS</p>
+      <h2 class="section-title">Achievements</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card achievement-leetcode">
+          <div class="achievement-icon">🏆</div>
+          <h3>LeetCode Badge</h3>
+          <p>Earned 3 badges and solved 150+ coding questions on LeetCode, demonstrating strong problem-solving skills and consistent practice.</p>
+        </div>
+        
+        <div class="achievement-card achievement-hackathon">
+          <div class="achievement-icon">🚀</div>
+          <h3>Hackathon Participation</h3>
+          <p>Participated in Hack the Town hackathon in 2024, collaborating with teams to build innovative solutions and prototypes.</p>
+          <span class="achievement-badge">Hackathon Participant</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container reveal">
+      <p class="section-no">// 07. CONTACT</p>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-subtitle">I'm excited to collaborate on innovative projects and opportunities. Reach out anytime!</p>
+      <div class="contact-grid">
+        <a href="https://outlook.office.com/owa/?compose&to=atulpandit2047@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-card contact-email">
+          <div class="contact-icon">✉️</div>
+          <h3>Email</h3>
+          <p>atulpandit2047@gmail.com</p>
+          <span class="contact-cta">Send Email →</span>
+        </a>
+        <a href="https://github.com/Atulpandeytech" target="_blank" rel="noopener noreferrer" class="contact-card contact-github">
+          <div class="contact-icon">🐙</div>
+          <h3>GitHub</h3>
+          <p>Atulpandeytech</p>
+          <span class="contact-cta">View Profile →</span>
+        </a>
+        <a href="https://www.linkedin.com/in/atulpandey2005" target="_blank" rel="noopener noreferrer" class="contact-card contact-linkedin">
+          <div class="contact-icon">💼</div>
+          <h3>LinkedIn</h3>
+          <p>atulpandey2005</p>
+          <span class="contact-cta">Connect →</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
